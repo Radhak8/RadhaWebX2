@@ -46,7 +46,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <a href="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-            Your Name
+            Radha K
           </a>
           <nav className="hidden md:flex space-x-6">
             {['about', 'quotes', 'achievements', 'projects', 'contact'].map((section) => (
