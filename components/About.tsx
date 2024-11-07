@@ -1,5 +1,6 @@
 
 import { motion } from 'framer-motion';
+import SkillBar from "./SkillBar";
 
 export default function About() {
   const skills = ['Web Development', 'UI/UX Design', 'Data Science', 'Machine Learning', 'Cloud Computing'];
@@ -27,6 +28,13 @@ export default function About() {
                 My journey in tech has been an exciting adventure, filled with continuous learning and 
                 growth. I believe in the power of technology to transform lives and businesses.
               </p>
+            <div className="mt-8">
+              <h3 className="text-2xl font-semibold mb-4 text-blue-400">Skills</h3>
+              <SkillBar skill="Web Development" level={90} />
+              <SkillBar skill="UI/UX Design" level={85} />
+              <SkillBar skill="React" level={88} />
+              <SkillBar skill="Node.js" level={82} />
+            </div>
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-blue-400">Skills & Expertise</h3>
@@ -42,10 +50,38 @@ export default function About() {
                     {skill}
                   </motion.div>
                 ))}
+            <div className="mt-8">
+              <h3 className="text-2xl font-semibold mb-4 text-blue-400">Skills</h3>
+              <SkillBar skill="Web Development" level={90} />
+              <SkillBar skill="UI/UX Design" level={85} />
+              <SkillBar skill="React" level={88} />
+              <SkillBar skill="Node.js" level={82} />
+            </div>
               </div>
+            <div className="mt-8">
+              <h3 className="text-2xl font-semibold mb-4 text-blue-400">Skills</h3>
+              <SkillBar skill="Web Development" level={90} />
+              <SkillBar skill="UI/UX Design" level={85} />
+              <SkillBar skill="React" level={88} />
+              <SkillBar skill="Node.js" level={82} />
+            </div>
+            </div>
+            <div className="mt-8">
+              <h3 className="text-2xl font-semibold mb-4 text-blue-400">Skills</h3>
+              <SkillBar skill="Web Development" level={90} />
+              <SkillBar skill="UI/UX Design" level={85} />
+              <SkillBar skill="React" level={88} />
+              <SkillBar skill="Node.js" level={82} />
             </div>
           </div>
         </motion.div>
+            <div className="mt-8">
+              <h3 className="text-2xl font-semibold mb-4 text-blue-400">Skills</h3>
+              <SkillBar skill="Web Development" level={90} />
+              <SkillBar skill="UI/UX Design" level={85} />
+              <SkillBar skill="React" level={88} />
+              <SkillBar skill="Node.js" level={82} />
+            </div>
       </div>
     </section>
   );
