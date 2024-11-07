@@ -1,0 +1,119 @@
+
+> web-app@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+ ⚠ Port 3001 is in use, trying 3002 instead.
+ ⚠ Port 3002 is in use, trying 3003 instead.
+  ▲ Next.js 14.2.16
+  - Local:        http://localhost:3003
+
+ ✓ Starting...
+ ✓ Ready in 8.2s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 650ms (72 modules)
+ ○ Compiling / ...
+ ⨯ ./components/Contact.tsx:9:1
+Module not found: Can't resolve '@/components/ui/use-toast'
+[0m [90m  7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+[0m [90m  8 |[39m [36mimport[39m { [33mTextarea[39m } [36mfrom[39m [32m"@/components/ui/textarea"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { toast } [36mfrom[39m [32m"@/components/ui/use-toast"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m 10 |[39m[0m
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mContact[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [formData[33m,[39m setFormData] [33m=[39m useState({[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./components/Contact.tsx:9:1
+Module not found: Can't resolve '@/components/ui/use-toast'
+[0m [90m  7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+[0m [90m  8 |[39m [36mimport[39m { [33mTextarea[39m } [36mfrom[39m [32m"@/components/ui/textarea"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { toast } [36mfrom[39m [32m"@/components/ui/use-toast"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m 10 |[39m[0m
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mContact[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [formData[33m,[39m setFormData] [33m=[39m useState({[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./components/Contact.tsx:9:1
+Module not found: Can't resolve '@/components/ui/use-toast'
+[0m [90m  7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+[0m [90m  8 |[39m [36mimport[39m { [33mTextarea[39m } [36mfrom[39m [32m"@/components/ui/textarea"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { toast } [36mfrom[39m [32m"@/components/ui/use-toast"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m 10 |[39m[0m
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mContact[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [formData[33m,[39m setFormData] [33m=[39m useState({[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/page.tsx
+ HEAD / 500 in 19645ms
+[33m,[39m setFormData] [33m=[39m useState({[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/page.tsx
+ GET / 500 in 4229ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/home/user/web-app/.next/server/app'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/page' in /home/user/web-app/node_modules/next/dist/server for build dependencies doesn't lead to expected result '/home/user/web-app/.next/server/app/page.js', but to 'Error: Can't resolve '../../../../.next/server/app/page' in '/home/user/web-app/node_modules/next/dist/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/page (expected /home/user/web-app/.next/server/app/page.js)
+<w>  at file dependencies /home/user/web-app/node_modules/next/dist/server/require.js
+<w>  at file /home/user/web-app/node_modules/next/dist/server/require.js
+<w>  at file dependencies /home/user/web-app/node_modules/next/dist/server/load-components.js
+<w>  at file /home/user/web-app/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /home/user/web-app/node_modules/next/dist/build/utils.js
+<w>  at file /home/user/web-app/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /home/user/web-app/node_modules/next/dist/build/handle-externals.js
+<w>  at file /home/user/web-app/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /home/user/web-app/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /home/user/web-app/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /home/user/web-app/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+ ⨯ ./components/Contact.tsx:9:1
+Module not found: Can't resolve '@/components/ui/use-toast'
+[0m [90m  7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+[0m [90m  8 |[39m [36mimport[39m { [33mTextarea[39m } [36mfrom[39m [32m"@/components/ui/textarea"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { toast } [36mfrom[39m [32m"@/components/ui/use-toast"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m 10 |[39m[0m
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mContact[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [formData[33m,[39m setFormData] [33m=[39m useState({[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./components/Contact.tsx:9:1
+Module not found: Can't resolve '@/components/ui/use-toast'
+[0m [90m  7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+[0m [90m  8 |[39m [36mimport[39m { [33mTextarea[39m } [36mfrom[39m [32m"@/components/ui/textarea"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { toast } [36mfrom[39m [32m"@/components/ui/use-toast"[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m 10 |[39m[0m
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mContact[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [formData[33m,[39m setFormData] [33m=[39m useState({[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/page.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/home/user/web-app/.next/server/app'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/page' in /home/user/web-app/node_modules/next/dist/server for build dependencies doesn't lead to expected result '/home/user/web-app/.next/server/app/page.js', but to 'Error: Can't resolve '../../../../.next/server/app/page' in '/home/user/web-app/node_modules/next/dist/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/page (expected /home/user/web-app/.next/server/app/page.js)
+<w>  at file dependencies /home/user/web-app/node_modules/next/dist/server/require.js
+<w>  at file /home/user/web-app/node_modules/next/dist/server/require.js
+<w>  at file dependencies /home/user/web-app/node_modules/next/dist/server/load-components.js
+<w>  at file /home/user/web-app/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /home/user/web-app/node_modules/next/dist/build/utils.js
+<w>  at file /home/user/web-app/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /home/user/web-app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /home/user/web-app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /home/user/web-app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
