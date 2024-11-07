@@ -1,7 +1,10 @@
 
 import type { Metadata } from 'next'
+import { Providers } from "./providers";
 import { Inter } from 'next/font/google'
+import { Providers } from "./providers";
 import './globals.css'
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +30,7 @@ export default function RootLayout({
         {/* HTTPS Enforcement */}
         <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}><Providers>{children}</Providers></body>
     </html>
   )
 }
